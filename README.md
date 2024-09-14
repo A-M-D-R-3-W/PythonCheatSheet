@@ -275,9 +275,9 @@ for name in names:
 
 ## Miscellaneous
 
-### Rounding Up Dividing `n`
+### Rounding Up Dividing `n` (used for finding middle index)
 ```python
-int(n / 2) + int(n % 2)
+int(n // 2) + int(n % 2)
 ```
 
 ### For Loop Range()
