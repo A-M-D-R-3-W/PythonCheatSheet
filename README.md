@@ -280,7 +280,7 @@ for name in names:
 int(n / 2) + int(n % 2)
 ```
 
-### Advanced For Loop Range
+### For Loop Range()
 ```python
 for i in range(start, stop, step):
 ```
