@@ -1,7 +1,6 @@
 # PythonCheatSheet
 A cheat sheet for Python syntax and methods. Designed to be used as a refresher - not for beginners.
 
-
 ## Collections
 
 ### Lists
@@ -24,6 +23,16 @@ fruits.insert(1, 'bilberry')  # ['apple', 'bilberry', 'banana', 'cherry', 'date'
 #### Removing a Particular Element
 ```python
 fruits.remove('banana')  # ['apple', 'bilberry', 'cherry', 'date']
+```
+
+#### Removing with pop
+```python
+fruits.pop(2)  # 'cherry', ['apple', 'bilberry', 'date']
+```
+
+#### Clearing all Elements
+```python
+fruits.clear()  # []
 ```
 
 #### Accessing Elements Using Indexing
@@ -54,17 +63,67 @@ found_1_in_list = 1 in my_list  # True
 index_1_in_list = my_list.index(1) if found_1_in_list else -1  # 0
 ```
 
+#### Counting Element Occurrences
+```python
+count_1s = my_list.count(1)  # 1
+```
+
 #### Sorting Items in a List
 ```python
 sorted_list = sorted(my_list, reverse=True)  # [5, 4, 3, 2, 1]
 ```
+
+#### Sorting List in Place
+```python
+my_list.sort()
+```
+
+#### Reversing a List
+```python
+reversed_list = reversed(my_list)  # [5, 4, 3, 2, 1]
+my_list.reverse()
+```
+
+#### Copying a List
+```python
+copy_list = my_list.copy()
+```
+
+#### Length of List
+```python
+length = len(my_list)  # 5
+```
+
+#### Minimum and Maximum of List
+```python
+min_element = min(my_list)  # 1
+max_element = max(my_list)  # 5
+```
+
+#### Sum of List
+```python
+sum_of_elements = sum(my_list)  # 15
+```
+
+#### Enumerating List
+```python
+for index, value in enumerate(my_list):
+    print(index, value)
+```
+
+#### Checking if All/Any Elements are True
+```python
+all_true = all(my_list)  # True if all elements are true
+any_true = any(my_list)  # True if any element is true
+```
+
+### Special List Operations
 
 #### Adding Lists
 ```python
 merged = my_list + another_list
 ```
 
-### Special List Operations
 #### Creating a Boolean List
 ```python
 visited = [False] * len(input_string)
